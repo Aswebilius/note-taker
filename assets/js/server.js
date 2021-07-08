@@ -6,8 +6,6 @@ const uuid = require("uuid");
 const app = express();
 var port = process.env.PORT || 3017;
 
-var port = process.env.PORT || 3017;
-
 //Middleware
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
@@ -20,7 +18,7 @@ app.get("/api/notes", (req, res) => {
 });
 
 //POST function to add new notes
-app.post("/api/mptes", (req, res) => {
+app.post("/api/notes", (req, res) => {
   const notes = JSON.parse(fs.readFileSync("./db/db.json"));
   const newNotes =req.body;
   newNotes.id = uuid.v4();
