@@ -3,13 +3,14 @@ const fs = require("fs");
 const path =require("path");
 const notes = require("./db/db.json");
 const uuid = require("uuid");
+const {DH_CHECK_P_NOT_SAFE_PRIME} = require("constants");
 const app = express();
 var port = process.env.PORT || 3017;
 
 //Middleware
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use(express.stactic("./public"));
+app.use(express.stactic("public"));
 
 
 //Get API db.json
