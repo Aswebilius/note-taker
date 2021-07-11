@@ -4,4 +4,4 @@ This application functions as a note taker. The User can write a note in the fie
 
 In order to use this application, the Node packages needed to be installed are the "FS" and the "Express" packages. After installing the necessary packages, the User activates the server by using the integrated terminal and typing "node server.js" which will display the message "App listening on PORT: 3001." The User then must open the browser of their choice, and in the URL type in "localhost: 3001" to bring up the Note Taker Application.
 
-<img src = "/assets/images/Saved Notes.png">
+<img src = "public\assets\images\savednotes.png">
